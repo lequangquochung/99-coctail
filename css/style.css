@@ -1,12 +1,81 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294E3;
+    --primary: #426351;
     --secondary: #8F12FD;
     --light: #F0F6FF;
     --dark: #262B47;
+    --blueSecond: #0E2830;
+    --secondLight: #E0B880 ;
+    --backgroundMain: #fffdf5;
+    --browMain:#905A37;
+}
+
+/* font */
+@font-face {
+    font-family: caviarFont;
+    src: url(../font-family/00056-UTM-Caviar.ttf);
+ }
+
+ @font-face {
+    font-family: sinistreFont;
+    src: url(../font-family/DFVN-Sinistre.otf);
+ }
+
+ @font-face {
+    font-family: americanaFont;
+    src: url(../font-family/UTM-Americana.ttf);
+ }
+
+ .font-sinistre {
+    font-family: sinistreFont !important;
+ }
+
+ .font-caviar {
+    font-family: caviarFont !important;
+ }
+
+ .font-americana {
+    font-family: americanaFont !important;
+ }
+
+/**!SECTION common
+**/
+.text-white{
+    color: white;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.primary-title-color{
+    color: var(--primary);
+}
+
+.blueSecond-title-color{
+    color: var(--blueSecond);
+}
+
+.bg-item-custom{
+    background-color: var(--primary) !important;
+}
+
+.color-title-secondLight{
+    color: var(--secondLight);
 }
 
 
+
+
+
+/* booking */
+.img-booking{
+    border-radius: 20px;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -41,6 +110,15 @@ h6,
     font-weight: 500 !important;
 }
 
+.bg-custom{
+    background-color: var(--backgroundMain);
+}
+
+/* booking */
+.booking-title{
+    text-decoration: none;
+    color: var(--secondLight) !important;
+}
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
@@ -74,7 +152,8 @@ h6,
     position: relative;
     overflow: hidden;
     border: none;
-    color: #FFFFFF;
+    color: white;
+    font-weight: 500;
     z-index: 1;
 }
 
@@ -93,12 +172,13 @@ h6,
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: var(--secondLight);
+   
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: var(--secondLight);
 }
 
 .btn.btn-primary-gradient:hover::after,
@@ -139,21 +219,30 @@ h6,
     bottom: 45px;
     z-index: 99;
     border: none;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background:var(--secondLight);
+    
+}
+
+.back-to-top > i {
+    color: var(--primary ) !important;
 }
 
 
 /*** Navbar ***/
+.navbar-nav {
+    margin-left: auto;
+}
+
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
     padding: 45px 0;
-    font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-family: caviarFont;
+    font-weight: bold;
     color: var(--light) !important;
     outline: none;
     transition: .5s;
+    font-size: 1.15rem;    
 }
 
 .navbar-light .navbar-nav .nav-link::before {
@@ -171,7 +260,7 @@ h6,
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--blueSecond) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover::before,
@@ -207,7 +296,7 @@ h6,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--dark) !important;
+        color: var(--blueSecond) !important;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -241,15 +330,15 @@ h6,
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: #FFFFFF;
+        background: #E0B880;
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
-        border-top-color: var(--primary);
+        border-top-color: var(--blueSecond);
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
-        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+        background:var(--blueSecond);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -258,13 +347,14 @@ h6,
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
     padding: 16rem 0 0 0;
-    background:
+    /* background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
         url(../img/bg-bottom.png),
-        linear-gradient(to bottom right, var(--primary), var(--secondary));
+        linear-gradient(to bottom right, var(--primary), var(--secondary)); */
+    background: var(--primary);
     background-position:
         left 0px top 0px,
         right 0px top 50%,
@@ -274,9 +364,34 @@ h6,
 
 @media (max-width: 991.98px) {
     .hero-header {
-        padding: 6rem 0 9rem 0;
+        padding: 6rem 0 0 0;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .about-us-block{
+        background-image: none !important;
+    }
+    .bg-main{
+        display: block !important;
+    }
+
+    .about-us-title{
+        text-align: center;
+    }
+
+    .about-us-title, .about-us-content {
+        color: var(--blueSecond) !important;
+    }
+
+    .nav-bar-mobile-padding{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+}
+
+
 
 
 /*** Feature ***/
@@ -289,6 +404,17 @@ h6,
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .08);
 }
 
+/***!SECTION ***/
+.about-us-block{
+    background-image: url("../img/99/img-main-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bg-main{
+    display: none;
+}
 
 /*** Pricing ***/
 .pricing .nav {
@@ -332,7 +458,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../img/screenshot-frame.png) center center no-repeat;
+    /* background: url(../img/screenshot-frame.png) center center no-repeat; */
     background-size: 253px 500px;
     z-index: 1;
 }
@@ -382,13 +508,17 @@ h6,
 
 
 /*** Testimonial ***/
+.testimonial-item{
+    width: 100%;
+    height: 480px;
+}
 .testimonial-carousel .owl-item .testimonial-item,
 .testimonial-carousel .owl-item .testimonial-item * {
     transition: .5s;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background:  var(--primary);
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item h5,
@@ -411,7 +541,7 @@ h6,
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: var(--primary);
     border-radius: 60px;
     font-size: 18px;
     transition: .5s;
@@ -419,7 +549,7 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: var(--secondLight);
 }
 
 
