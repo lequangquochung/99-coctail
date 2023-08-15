@@ -47,11 +47,19 @@
         <!-- Navbar & Hero Start -->
         <div class=" position-relative p-0" id="home">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 nav-bar-mobile-padding">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0 font-sinistre">99COCKTAIL</h1>
-                </a>
+                <div class="logo-main">
+                    <a href="" class="navbar-brand p-0">
+                        <img class="logo-white object-fit-cover" src="./img/99/logo-white.png" alt="99%COCKTAIL"
+                            style="width: 50px;">
+                    </a>
+                    <!-- 
+                    <a href="" class="logo-green d-none navbar-brand p-0">
+                        <img src="./img/99/logo-green.png" alt="99%COCKTAIL"  style="max-height: 80px; width: 70px;">
+                    </a> -->
+                </div>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
+                    <span class="fa fa-bars text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
@@ -68,24 +76,23 @@
         <!-- Navbar & Hero End -->
 
         <!-- about us -->
-        <div class=" py-5 about-us-block" id="about">
-            <div class="container px-lg-5  text-content">
-                <div class="row mt-5 g-5 align-items-center">
+        <div class="about-us-block" id="about">
+            <div class="container px-lg-5 text-content position-absolute">
+                <div class="row mt-3 g-5 align-items-center">
                     <div class="col-lg-8 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <h1 class="mb-4 text-white font-sinistre about-us-title">NGƯỜI KHÁM PHÁ</h1>
+                        <h1 class="mb-5 text-white font-sinistre about-us-title">NGƯỜI KHÁM PHÁ</h1>
                         <p class="mb-4 text-white font-caviar about-us-content">Được xây dựng với tính cách của một
                             người khám phá, Gemination là điểm giao nhau giữa người bản địa và những người du mục, là
                             nơi tự do kết nối những tâm hồn trần trụi, nơi khám phá vị bản xứ với những trải nghiệm thoả
                             mãn mọi giác quan.
                         </p>
                     </div>
-                    <!-- <div class="col-lg-6" data-wow-delay="0.7s">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/img-02.jpg">
-                    </div> -->
                 </div>
             </div>
-            <div class="bg-main">
-                <img src="./img/99/img-main-bg.jpg" alt="" width="100%">
+            <div class="owl-carousel bg-main bg-main-carousel">
+                <img class="img-carousel-main" src="./img/99/img-main-02.jpg" alt="">
+                <img class="img-carousel-main" src="./img/99/img-main-02.jpg" alt="">
+                <img class="img-carousel-main" src="./img/99/img-main-03.jpg" alt="">
             </div>
         </div>
         <!-- About End -->
@@ -93,83 +100,371 @@
 
         <!-- Menu Mocktail -->
         <div id="feature">
-            <div class="container py-5 px-lg-5">
+            <div class="container pt-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="primary-title-color fw-bold mb-5 font-sinistre">MENU</h1>
-                    <h3 class="mb-3 blueSecond-title-color font-americana">COCKTAIL</h3>
+                    <h3 class="mb-3 primary-title-color font-sinistre">COCKTAIL</h3>
                 </div>
                 <div class="row g-4">
+                    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-item-custom bg-light rounded p-4">
+                        <div class="rounded p-4">
                             <div class="d-flex ">
-                                <h5 class="mb-3 text-white">PERFECT MOJITO</h5>
-                                <h5 class="mb-3 ml-auto text-white">$ 9.5</h5>
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">BAO VINH</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
                             </div>
-                            <span class="color-title-secondLight">Mint / Lime / Sugar / Ice / Carbonated Water</span>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Pineapple juice / lime juice / coconut syrup / cucumber syrup / coconut cream</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-item-custom bg-light rounded p-4">
+                        <div class="rounded p-4">
                             <div class="d-flex ">
-                                <h5 class="mb-3 text-white">PERFECT MOJITO</h5>
-                                <h5 class="mb-3 ml-auto text-white">$ 9.5</h5>
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">CHI LĂNG</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
                             </div>
-                            <span class="color-title-secondLight">Mint / Lime / Sugar / Ice / Carbonated Water</span>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Mint leaves / lime wedge / sugar <br> cane / lemongrass syrup / passion juice / 7UP
+                                </span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-item-custom bg-light rounded p-4">
+                        <div class="rounded p-4">
                             <div class="d-flex ">
-                                <h5 class="mb-3 text-white">PERFECT MOJITO</h5>
-                                <h5 class="mb-3 ml-auto text-white">$ 9.5</h5>
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">VỸ DẠ</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
                             </div>
-                            <span class="color-title-secondLight">Mint / Lime / Sugar / Ice / Carbonated Water</span>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Lychee fruit / lychee  juice / lime <br> juice / basil leaves / lychee syrup / 7UP</span>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">GIA HỘI</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Pineapple juice / orange  juice / lime  <br> juice / grenadine syrup / coconut syrup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">AN CỰU</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Red dragon fruit / sugar syrup / peach syrup / lime juice</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="container py-5 px-lg-5">
+            <!-- highball -->
+            <div class="container pt-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h3 class="mb-3 blueSecond-title-color font-americana">MOCKTAIL</h3>
+                    <h3 class="mb-3 blueSecond-title-color font-sinistre">HIGHBALL</h3>
                 </div>
                 <div class="row g-4">
+                    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> -->
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-item-custom bg-light rounded p-4">
+                        <div class="rounded p-4">
                             <div class="d-flex ">
-                                <h5 class="mb-3 text-white">PERFECT MOJITO</h5>
-                                <h5 class="mb-3 ml-auto text-white">$ 9.5</h5>
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">GIN & TONIC</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
                             </div>
-                            <span class="color-title-secondLight">Mint / Lime / Sugar / Ice / Carbonated Water</span>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Gin / Tonic water</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-item-custom bg-light rounded p-4">
+                        <div class="rounded p-4">
                             <div class="d-flex ">
-                                <h5 class="mb-3 text-white">PERFECT MOJITO</h5>
-                                <h5 class="mb-3 ml-auto text-white">$ 9.5</h5>
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">RUM & COKE</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
                             </div>
-                            <span class="color-title-secondLight">Mint / Lime / Sugar / Ice / Carbonated Water</span>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Light Rum / Coke</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-item-custom bg-light rounded p-4">
+                        <div class="rounded p-4">
                             <div class="d-flex ">
-                                <h5 class="mb-3 text-white">PERFECT MOJITO</h5>
-                                <h5 class="mb-3 ml-auto text-white">$ 9.5</h5>
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">WHISKEY & SODA</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
                             </div>
-                            <span class="color-title-secondLight">Mint / Lime / Sugar / Ice / Carbonated Water</span>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Whiskey / Soda water</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shooters -->
+            <div class="container pt-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-3 blueSecond-title-color font-sinistre">SHOOTERS</h3>
+                </div>
+                <div class="row g-4">
+                    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">B52</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Kahlua / Baileys / Cointreau</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">JAGER BOMB</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Jagermeister / Red Bull</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">TEQUILA POP</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Jose Cuervo / 7UP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- classic -->
+            <div class="container pt-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-3 blueSecond-title-color font-sinistre">CLASSIC</h3>
+                </div>
+                <div class="row g-4">
+                    <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">DAIQUIRI</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Bacardi Light / sugar/ lime juice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">GRASSHOPPER</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Creme de Cacao White / Creme de Menthe Green / fresh milk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">PASSION MOJITO</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Bacardi Light / mint leaves / sugar cane / lime wedge / passion juice / soda water</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">TOM COLLINS</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Gordon's Gin / sugar syrup / lime juice / soda water</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">SCREWDRIVER</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Smirnoff Vodka / orange juice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">DRY MARTINI</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Gordon's Gin / Dry Vermouth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">MANHATTAN</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Rye Whiskey / Red Vermouth / Angostura Bitters</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">NEGRONI</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Gordon's Gin / Campari / Sweet Red Vermouth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">OLD FASHIONED</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Bourbon Whiskey / Angostura Bitters / sugar cube / water</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">WHISKEY SOUR</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Bourbon Whiskey / sugar syrup / fresh lime juice / egg white</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">COSMOPOLITAN</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Vodka Citron / Cointreau / fresh lime juice / cranberry juice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">MARGARITA</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Jose Cuervo / Cointreau / fresh lime juice / syrup</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">MOJITO</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Bacardi Light / mint leaves / sugar cane / lime wedge / soda  water</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">PINA COLADA</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Bacardi Light / fresh pineapple juice / Malibu / coconut cream / fresh milk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-4">
+                            <div class="d-flex ">
+                                <h5 class="mb-3 primary-title-color font-caviar fw-bold">SEX ON THE BEACH</h5>
+                                <h5 class="mb-3 ml-auto primary-title-color font-sinistre">$ 9.5</h5>
+                            </div>
+                            <div style="width: 85%;">
+                                <span class="color-title-secondLight fst-italic fon font-Americana">Smirnoff Vodka / Peach Schnapps / fresh orange juice / cranberry  juice / grenadine syrup</span>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
 
+
+            <div class="container pt-5 px-lg-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="/img/99/phone-img-01.jpg" alt="" width="400px" height="600px">
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <h1>KIM LONG</h1>
+                        <p>
+                            Kim Long - Xuân phân đâm chồi, mang sắc hồng phớt với nguyên liệu chính là măng cụt và hương thơm của nụ hồng, đem lại tổng thể sweet & sour cùng tầng vị fruity e ấp bên dưới lớp bọt mịn béo từ lòng trắng trứng ôm trọn vị giác
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Features End -->
 
@@ -232,21 +527,21 @@
 
         <!-- Contact Start -->
         <div id="booking">
-            <div class="container px-lg-5">
+            <div class="container pt-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="mb-3 font-sinistre">Đặt Bàn</h1>
+                    <h1 class="mb-5 font-sinistre">Đặt Bàn</h1>
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <h1 class="text-center blueSecond-title-color"> Bạn vui lòng gọi đến
-                                <a class="booking-title" href="tel:0868879499">0868879499</a>
+                            <h1 class="text-center blueSecond-title-color font-caviar"> Bạn vui lòng gọi đến
+                                <a class="booking-title font-caviar" href="tel:0868879499">0868879499</a>
                                 để được ưu tiên đặt bàn.
                             </h1>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center">
-                        <img class="img-booking" src="/img/99/phone-img-01.jpg" alt="" width="600" height="800">
+                        <img class="img-booking" src="/img/99/phone-img-01.jpg" alt="" width="500" height="700">
                     </div>
                 </div>
             </div>
@@ -260,9 +555,8 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6">
                         <h4 class="text-white mb-4">LIÊN HỆ</h4>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>3rd Floor, 34 Nguyen Trai, Hue, Vietnam</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>0795 686 320</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -274,35 +568,9 @@
                         <h4 class="text-white mb-4">GIỜ MỞ CỬA</h4>
                         <p>Monday - Sunday
                             <br>
-                            5:30pm - 10:00pm</p>
+                            5:30pm - 10:00pm
+                        </p>
                     </div>
-                    <!-- <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">Quick Link</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">Popular Link</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div> -->
-                    <!-- <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">Newsletter</h4>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
-                            non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                    class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div class="container px-lg-5">
@@ -310,19 +578,10 @@
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                             Distributed By <a class="border-bottom" href="https://themewagon.com"
                                 target="_blank">ThemeWagon</a>
                         </div>
-                        <!-- <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -332,6 +591,26 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+
+
+        <!-- modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
     <!-- JavaScript Libraries -->

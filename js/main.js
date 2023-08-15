@@ -73,6 +73,14 @@
         items: 1
     });
 
+    // main carousel
+    $('.bg-main-carousel').owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        loop: true,
+        dots: true,
+        items: 1
+    })
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -98,6 +106,6 @@
             }
         }
     });
-    
+
 })(jQuery);
 

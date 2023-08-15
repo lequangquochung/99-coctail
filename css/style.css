@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #426351;
+    --primary: #16271e;
     --secondary: #8F12FD;
     --light: #F0F6FF;
     --dark: #262B47;
@@ -112,6 +112,23 @@ h6,
 
 .bg-custom{
     background-color: var(--backgroundMain);
+}
+
+/* about-ust */
+.text-content {
+    z-index: 97;
+    top: 15%;
+    left: 48px;
+}
+
+.img-carousel-main{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo-white{
+    object-fit: contain;
 }
 
 /* booking */
@@ -236,7 +253,7 @@ h6,
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
-    padding: 45px 0;
+    padding: 2rem 0;
     font-family: caviarFont;
     font-weight: bold;
     color: var(--light) !important;
@@ -260,7 +277,7 @@ h6,
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--blueSecond) !important;
+    color:white !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover::before,
@@ -278,7 +295,15 @@ h6,
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    /* max-height: 45px; */
+}
+
+.navbar-light .navbar-toggler{
+    color: white;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0.1rem;
 }
 
 @media (max-width: 991.98px) {
@@ -296,7 +321,7 @@ h6,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--blueSecond) !important;
+        color: white !important;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -305,11 +330,12 @@ h6,
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: var(--primary) !important;
+        color: white!important;
     }
 
     .navbar-light .navbar-brand h1 {
-        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+        background: var(--primary);
+        font-weight: bold;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -330,11 +356,11 @@ h6,
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: #E0B880;
+        background: var(--primary);
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
-        border-top-color: var(--blueSecond);
+        border-top-color: white;
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
@@ -369,6 +395,7 @@ h6,
 }
 
 @media only screen and (max-width: 768px) {
+    /* about us */
     .about-us-block{
         background-image: none !important;
         height: auto !important;
@@ -388,6 +415,19 @@ h6,
     .nav-bar-mobile-padding{
         padding-left: 12px !important;
         padding-right: 12px !important;
+        background-color: var(--primary);
+    }
+
+    .img-carousel-main{
+        height: auto;
+    }
+
+   
+    
+
+    .text-content{
+        position: relative !important;
+        left: 0;
     }
 
     /* booking */
@@ -413,7 +453,7 @@ h6,
 
 /***!SECTION ***/
 .about-us-block{
-    background-image: url("../img/99/img-main-bg.jpg");
+    /* background-image: url("../img/99/img-main-bg.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
