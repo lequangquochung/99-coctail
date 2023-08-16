@@ -10,6 +10,10 @@
     --browMain:#905A37;
 }
 
+*{
+    color: black;
+}
+
 /* font */
 @font-face {
     font-family: caviarFont;
@@ -36,6 +40,19 @@
 
  .font-americana {
     font-family: americanaFont !important;
+ }
+
+ .radius-20{
+    border-radius: 20px;
+ }
+
+ .cicle-review {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(-270deg, var(--primary) 50%, white 50% ); 
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    margin-left: 1rem;
  }
 
 /**!SECTION common
@@ -69,12 +86,24 @@
 }
 
 
-
-
-
 /* booking */
+.tittle-booking{
+    top: 5%;
+}
+
 .img-booking{
     border-radius: 20px;
+    border: 5px solid white;
+    width: fit-content;
+    height: 72vh;
+}
+
+.booking-block{
+    max-width: 100%;
+    background: rgba(0,0,0, 0.6)url("/img/99/img-main-02.jpg");
+    background-size:cover ;
+    height: 100vh;
+    background-blend-mode: darken;
 }
 /*** Spinner ***/
 #spinner {
@@ -114,11 +143,20 @@ h6,
     background-color: var(--backgroundMain);
 }
 
+.px-24{
+    padding: 0 24px;
+}
+
 /* about-ust */
+.shape-background{
+    padding-top: 24px;
+    background-color:  rgb(49 49 49 / 60%);
+}
+
 .text-content {
     z-index: 97;
     top: 15%;
-    left: 48px;
+    left: 15%;
 }
 
 .img-carousel-main{
@@ -135,6 +173,16 @@ h6,
 .booking-title{
     text-decoration: none;
     color: var(--secondLight) !important;
+}
+
+.block-booking-img{
+    width: 80%;
+}
+
+/* MENU */
+.menu-block{
+    background-image: url("../img/99/bg-menu.png");
+    background-position: center;
 }
 
 /*** Gradient Text & BG ***/
@@ -394,6 +442,19 @@ h6,
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    /* booking */
+    .block-booking-img{
+        width: 100%;
+    }
+
+    .img-booking{
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* about us */
     .about-us-block{
@@ -422,8 +483,15 @@ h6,
         height: auto;
     }
 
-   
-    
+    .media-signature{
+        height: fit-content;
+        width: 100%;
+    }
+
+    .shape-background{
+        background: none;
+    }
+
 
     .text-content{
         position: relative !important;
@@ -431,11 +499,21 @@ h6,
     }
 
     /* booking */
-    .img-booking{
+    .block-booking-img{
         width: 100%;
-        height: auto;
     }
 
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .img-booking{
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+    }
+    .block-booking-img{
+        width: 100%;
+    }
 }
 
 
@@ -587,16 +665,20 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background: var(--primary);
+    color: #ffffff;
+    background: var(--primary) !important;
     border-radius: 60px;
     font-size: 18px;
     transition: .5s;
 }
 
+.owl-next > i, .owl-prev > i {
+    color: white ;
+}
+
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--secondLight);
+    background: var(--secondLight) !important;
 }
 
 
