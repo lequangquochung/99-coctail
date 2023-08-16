@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #16271e;
+    --primary: #426351;
     --secondary: #8F12FD;
     --light: #F0F6FF;
     --dark: #262B47;
@@ -30,6 +30,12 @@
     src: url(../font-family/UTM-Americana.ttf);
  }
 
+ .underline{
+    height: 5px;
+    width: 200px;
+    background-color: var(--primary);
+ }
+
  .font-sinistre {
     font-family: sinistreFont !important;
  }
@@ -52,7 +58,18 @@
     background: linear-gradient(-270deg, var(--primary) 50%, white 50% ); 
     border-radius: 50%;
     border: 1px solid var(--primary);
-    margin-left: 1rem;
+ }
+
+ .cicle-review-full {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(-270deg,  white 100% ); 
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+ }
+
+ .font-size-topic {
+    font-size: 60px;
  }
 
 /**!SECTION common
@@ -89,6 +106,13 @@
 /* booking */
 .tittle-booking{
     top: 5%;
+    
+}
+
+.tittle-booking-text{
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgb(161 161 161 / 34%);
 }
 
 .img-booking{
@@ -453,6 +477,10 @@ h6,
         height: 65vh;
         object-fit: cover;
     }
+
+    .testimonial-item{
+        height: 350px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -470,7 +498,7 @@ h6,
     }
 
     .about-us-title, .about-us-content {
-        color: var(--blueSecond) !important;
+        color: var(--primary) !important;
     }
 
     .nav-bar-mobile-padding{
@@ -501,6 +529,10 @@ h6,
     /* booking */
     .block-booking-img{
         width: 100%;
+    }
+
+    .testimonial-item{
+        height: 390px !important;
     }
 
 }
@@ -635,7 +667,7 @@ h6,
 /*** Testimonial ***/
 .testimonial-item{
     width: 100%;
-    height: 480px;
+    height: 450px;
 }
 .testimonial-carousel .owl-item .testimonial-item,
 .testimonial-carousel .owl-item .testimonial-item * {
