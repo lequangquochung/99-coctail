@@ -11,6 +11,10 @@
     --circle-review: #09260a;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 *{
     color: black;
 }
@@ -537,7 +541,7 @@ h6,
     }
 
     .about-us-title, .about-us-content {
-        color: var(--primary) !important;
+        /* color: var(--primary) !important; */
     }
 
     .shape-background{
@@ -569,7 +573,7 @@ h6,
     }
 
     .about-us-title, .about-us-content {
-        color: var(--primary) !important;
+        /* color: var(--primary) !important; */
     }
 
     .nav-bar-mobile-padding{
