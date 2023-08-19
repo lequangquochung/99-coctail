@@ -69,7 +69,12 @@
         smartSpeed: 1000,
         loop: true,
         dots: true,
-        items: 1
+        items: 1,
+        nav: true,
+        navText : [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
     });
 
     // main carousel
