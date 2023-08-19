@@ -8,6 +8,7 @@
     --secondLight: #E0B880 ;
     --backgroundMain: #fffdf5;
     --browMain:#905A37;
+    --circle-review: #09260a;
 }
 
 *{
@@ -33,7 +34,11 @@
  .underline{
     height: 5px;
     width: 200px;
-    background-color: var(--primary);
+    background-color: white;
+ }
+
+ .underline-signature{
+    background-color: var(--primary) !important;
  }
 
  .font-sinistre {
@@ -60,6 +65,10 @@
     border: 1px solid var(--primary);
     left: 45%;
     bottom: 5px;
+ }
+
+ .circle-review-level-1 {
+    background: linear-gradient(270deg, var(--circle-review) 70%,  white 30% ) !important; 
  }
 
  .circle-review-full {
@@ -206,10 +215,17 @@ h6,
 }
 
 /* MENU */
-.menu-block{
-    background-image: url("../img/99/bg-menu.png");
+.classic-menu{
+    background-image: url("../img/99/bg-menu/BG\ for\ Classic.png");
     background-position: center;
 }
+
+.signatuer-block{
+    background: url("../img/99/bg-menu/BG\ for\ Signature.png");
+    background-position: center;
+}
+
+.class
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
