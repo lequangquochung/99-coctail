@@ -87,8 +87,15 @@ html{
     font-size: 60px;
  }
 
- .menu-item-name{
+ .menu-item-name {
+    background-color: red;
+    width: 275px;
     /* width: ; */
+ }
+
+ .menu-item-price{
+    background-color: yellow;
+    width: 3rem;
  }
 
 /**!SECTION common
