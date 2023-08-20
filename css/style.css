@@ -502,6 +502,9 @@ h6,
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991.98px){
+    .text-main-header{
+        left: 5% !important;
+    }
     .circle-review{
         left: 42%;
     }
