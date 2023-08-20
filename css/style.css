@@ -87,6 +87,10 @@ html{
     font-size: 60px;
  }
 
+ .menu-item-name{
+    /* width: ; */
+ }
+
 /**!SECTION common
 **/
 .text-white{
