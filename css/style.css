@@ -9,6 +9,7 @@
     --backgroundMain: #fffdf5;
     --browMain:#905A37;
     --circle-review: #09260a;
+    --header-mobile:#fffdf3;
 }
 
 html{
@@ -96,11 +97,12 @@ html{
  .menu-item-price{
     /* background-color: yellow; */
     width: 3rem;
+    padding-top: 2px;
  }
 
  .icon-alcohol{
     right: 10%;
-    top: -15px;
+    top: -12px;
  }
 
 /**!SECTION common
@@ -502,8 +504,13 @@ h6,
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991.98px){
+    .bg-header-mobile{
+        background: var(--header-mobile);
+        max-width: 100%;
+    }
+
     .text-main-header{
-        left: 5% !important;
+        left: 4% !important;
     }
     .circle-review{
         left: 42%;
@@ -547,7 +554,7 @@ h6,
     .nav-bar-mobile-padding{
         padding-left: 12px !important;
         padding-right: 12px !important;
-        background-color: var(--primary);
+        background-color: var(--circle-review);
     }
 
     .bg-main-carousel{
@@ -560,7 +567,7 @@ h6,
     }
 
     .about-us-title, .about-us-content {
-        /* color: var(--primary) !important; */
+        color: var(--primary) !important;
     }
 
     .shape-background{
@@ -573,6 +580,11 @@ h6,
 }
 
 @media only screen and (max-width: 768px) {
+    .bg-header-mobile{
+        background: var(--header-mobile) !important;
+        max-width: 100%;
+    }
+
     .circle-review{
         left: 42%;
         
@@ -592,13 +604,13 @@ h6,
     }
 
     .about-us-title, .about-us-content {
-        /* color: var(--primary) !important; */
+        color: var(--primary) !important;
     }
 
     .nav-bar-mobile-padding{
         padding-left: 12px !important;
         padding-right: 12px !important;
-        background-color: var(--primary);
+        background-color: var(--circle-review);
     }
 
     .img-carousel-main{
@@ -820,7 +832,7 @@ h6,
 
 /*** Footer ***/
 .footer {
-    margin-top: 6rem;
+    margin-top: 0;
     /* padding-top: 9rem; */
     /* background:
         url(../img/bg-circle.png),
