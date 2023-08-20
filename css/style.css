@@ -630,6 +630,10 @@ h6,
         width: 100%;
     }
 
+    .signature-carousel .owl-nav, .signature-carousel .owl-nav {
+        margin-top: -55px !important;
+    }
+
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
