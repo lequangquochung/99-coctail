@@ -88,14 +88,19 @@ html{
  }
 
  .menu-item-name {
-    background-color: red;
-    width: 275px;
+    /* background-color: red; */
+    width: 265px;
     /* width: ; */
  }
 
  .menu-item-price{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 3rem;
+ }
+
+ .icon-alcohol{
+    right: 10%;
+    top: -15px;
  }
 
 /**!SECTION common
