@@ -65,7 +65,8 @@
 
     // signature
     $(".signature-carousel").owlCarousel({
-        // autoplay: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
         smartSpeed: 1000,
         loop: true,
         dots: true,
