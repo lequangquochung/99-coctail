@@ -232,7 +232,7 @@ h6,
     color: var(--secondLight) !important;
 }
 
-.block-booking-img{
+.block-booking-img{ 
     width: 80%;
 }
 
@@ -245,6 +245,10 @@ h6,
 .signatuer-block{
     background: url("../img/99/bg-menu/bg-signature.png");
     background-position: center;
+}
+.img-sigature{
+    left: 35%;
+    top: 15%;
 }
 
 .class
@@ -559,7 +563,7 @@ h6,
     }
 
     .signature-carousel .owl-nav, .signature-carousel .owl-nav {
-        margin-top: -20px !important;
+        margin-top: -35px !important;
         position: relative;
         z-index: 99;
     }
@@ -587,6 +591,11 @@ h6,
 }
 
 @media only screen and (max-width: 768px) {
+    .img-sigature{
+        left: 26%;
+        top: 15%;
+    }
+
     .bg-header-mobile{
         background-image: url("../img/99/bg-menu/bg-signature.png");
         background-position: center;
@@ -654,7 +663,7 @@ h6,
     }
 
     .signature-carousel .owl-nav, .signature-carousel .owl-nav {
-        margin-top: -20px !important;
+        margin-top: -35px !important;
         position: relative;
         z-index: 99;
     }
