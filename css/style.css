@@ -245,7 +245,7 @@ h6,
 }
 .img-sigature{
     left: 35%;
-    top: 15%;
+    top: 30%;
 }
 
 .class
@@ -505,6 +505,11 @@ h6,
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991.98px){
+    .img-sigature{
+        left: 30%;
+        top: 30%;
+    }
+    
      .item-long{
         width: 210px;
     }
@@ -597,8 +602,8 @@ h6,
     }
 
     .img-sigature{
-        left: 26%;
-        top: 15%;
+        left: 30%;
+        top: 30%;
     }
 
     .bg-header-mobile{
@@ -691,6 +696,10 @@ h6,
     .booking-mobile {
         margin-top: 50px;    
         z-index: 99;
+    }
+
+    .img-sigature{
+
     }
 }
 
