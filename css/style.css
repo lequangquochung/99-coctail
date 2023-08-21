@@ -89,13 +89,10 @@ html{
  }
 
  .menu-item-name {
-    /* background-color: red; */
     width: 265px;
-    /* width: ; */
  }
 
  .menu-item-price{
-    /* background-color: yellow; */
     width: 3rem;
     padding-top: 2px;
  }
@@ -508,8 +505,12 @@ h6,
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991.98px){
+     .item-long{
+        width: 210px;
+    }
+
     .bg-header-mobile{
-        background-image: url("../img/99/bg-menu/bg-classic.png");
+        background-image: url("../img/99/bg-menu/bg-signature.png");
         background-position: center;
         max-width: 100%;
     }
@@ -591,6 +592,10 @@ h6,
 }
 
 @media only screen and (max-width: 768px) {
+    .item-long{
+        width: 210px;
+    }
+
     .img-sigature{
         left: 26%;
         top: 15%;
@@ -663,7 +668,7 @@ h6,
     }
 
     .signature-carousel .owl-nav, .signature-carousel .owl-nav {
-        margin-top: -35px !important;
+        margin-top: 0 !important;
         position: relative;
         z-index: 99;
     }
@@ -671,6 +676,10 @@ h6,
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+     .item-long{
+        width: 210px;
+    }
+
     .img-booking{
         width: 100%;
         height: 65vh;
