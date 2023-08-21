@@ -238,12 +238,12 @@ h6,
 
 /* MENU */
 .classic-menu{
-    background-image: url("../img/99/bg-menu/BG\ for\ Classic.png");
+    background-image: url("../img/99/bg-menu/bg-classic.png");
     background-position: center;
 }
 
 .signatuer-block{
-    background: url("../img/99/bg-menu/BG\ for\ Signature.png");
+    background: url("../img/99/bg-menu/bg-signature.png");
     background-position: center;
 }
 
@@ -505,7 +505,8 @@ h6,
 
 @media only screen and (min-width: 767px) and (max-width: 991.98px){
     .bg-header-mobile{
-        background: var(--header-mobile);
+        background-image: url("../img/99/bg-menu/bg-classic.png");
+        background-position: center;
         max-width: 100%;
     }
 
@@ -557,6 +558,12 @@ h6,
         background-color: var(--circle-review);
     }
 
+    .signature-carousel .owl-nav, .signature-carousel .owl-nav {
+        margin-top: -20px !important;
+        position: relative;
+        z-index: 99;
+    }
+
     .bg-main-carousel{
         position: relative;
     }
@@ -581,7 +588,8 @@ h6,
 
 @media only screen and (max-width: 768px) {
     .bg-header-mobile{
-        background: var(--header-mobile) !important;
+        background-image: url("../img/99/bg-menu/bg-signature.png");
+        background-position: center;
         max-width: 100%;
     }
 
@@ -646,7 +654,9 @@ h6,
     }
 
     .signature-carousel .owl-nav, .signature-carousel .owl-nav {
-        margin-top: -55px !important;
+        margin-top: -20px !important;
+        position: relative;
+        z-index: 99;
     }
 
 }
@@ -659,6 +669,10 @@ h6,
     }
     .block-booking-img{
         width: 100%;
+    }
+    .booking-mobile {
+        margin-top: 50px;    
+        z-index: 99;
     }
 }
 
