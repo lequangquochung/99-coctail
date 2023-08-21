@@ -154,7 +154,7 @@ html{
 
 .booking-block{
     max-width: 100%;
-    background: rgba(0,0,0, 0.6)url("/img/99/img-main-02.jpg");
+    background: rgba(0,0,0, 0.6)url("../img/99/dscf7895_optimized.jpg");
     background-size:cover ;
     height: 100vh;
     background-blend-mode: darken;
@@ -718,7 +718,6 @@ h6,
 
 /***!SECTION ***/
 .about-us-block{
-    /* background-image: url("../img/99/img-main-bg.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -770,7 +769,6 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    /* background: url(../img/screenshot-frame.png) center center no-repeat; */
     background-size: 253px 500px;
     z-index: 1;
 }
@@ -874,12 +872,6 @@ h6,
 /*** Footer ***/
 .footer {
     margin-top: 0;
-    /* padding-top: 9rem; */
-    /* background:
-        url(../img/bg-circle.png),
-        url(../img/bg-triangle.png),
-        url(../img/bg-top.png),
-        linear-gradient(to bottom right, var(--primary), var(--secondary)); */
     background-position:
         left 0px bottom 0px,
         right 0px top 50%,
